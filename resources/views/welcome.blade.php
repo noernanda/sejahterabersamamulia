@@ -46,14 +46,14 @@
     <div class="container clearfix">
         <div class="contact-info float-left">
             <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-            <i class="fa fa-phone"></i> +1 5589 55488 55
+            <i class="fa fa-phone"></i> (021) 5507027
         </div>
-        <div class="social-links float-right">
+        {{-- <div class="social-links float-right">
             <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
             <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
             <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
             <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        </div>
+        </div> --}}
     </div>
 </section>
 
@@ -89,10 +89,10 @@
 <section id="intro">
 
     <div class="intro-content">
-      <h2>Where<span>Technology </span> is<br>Visible!</h2>
+      {{-- <h2>Where<span>Technology </span> is<br>Visible!</h2> --}}
       <div>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="#portfolio" class="btn-projects scrollto">Our Projects</a>
+        {{-- <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <a href="#portfolio" class="btn-projects scrollto">Our Projects</a> --}}
       </div>
     </div>
     <div id="intro-carousel" class="owl-carousel" >
@@ -101,7 +101,8 @@
     @endforeach
     </div>
 
-  </section><!-- #intro -->
+</section>
+<!-- #intro -->
 
 <main id="main">
 
@@ -127,7 +128,8 @@
             </div>
 
         </div>
-    </section><!-- #about -->
+    </section>
+    <!-- #about -->
 
     <!--==========================
       Services Section
@@ -175,7 +177,8 @@
             </div>
 
         </div>
-    </section><!-- #services -->
+    </section>
+    <!-- #services -->
 
     <!--==========================
       Clients Section
@@ -199,7 +202,8 @@
             </div>
 
         </div>
-    </section><!-- #clients -->
+    </section>
+    <!-- #clients -->
 
     <!--==========================
       Our Portfolio Section
@@ -306,12 +310,13 @@
             </div>
 
         </div>
-    </section><!-- #portfolio -->
+    </section>
+    <!-- #portfolio -->
 
     <!--==========================
       Testimonials Section
     ============================-->
-    <section id="testimonials" class="wow fadeInUp">
+    {{-- <section id="testimonials" class="wow fadeInUp">
         <div class="container">
             <div class="section-header">
                 <h2>Testimonials</h2>
@@ -376,7 +381,8 @@
             </div>
 
         </div>
-    </section><!-- #testimonials -->
+    </section>
+    <!-- #testimonials --> --}}
 
     <!--==========================
       Our Team Section
@@ -453,7 +459,8 @@
             </div>
 
         </div>
-    </section><!-- #team -->
+    </section>
+    <!-- #team -->
 
     <!--==========================
       Contact Section
@@ -471,7 +478,7 @@
                     <div class="contact-address">
                         <i class="ion-ios-location-outline"></i>
                         <h3>Address</h3>
-                        <address>A108 Adam Street, NY 535022, USA</address>
+                        <address>Jl. Marsekal Suryadharma, Komplek Pergudangan Bandara Mas Blok A6 No 18 Kota Tangerang, Jakarta 12260, Indonesia.</address>
                     </div>
                 </div>
 
@@ -479,7 +486,7 @@
                     <div class="contact-phone">
                         <i class="ion-ios-telephone-outline"></i>
                         <h3>Phone Number</h3>
-                        <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+                        <p><a href="tel:+62215507027">(021) 5507027</a></p>
                     </div>
                 </div>
 
@@ -495,10 +502,10 @@
         </div>
 
         <div class="container mb-4">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9813648575705!2d106.62717031536936!3d-6.133205861841073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a03638f479803%3A0x3cdc829fef2a69cc!2sPT.SEJAHTERA%20BERSAMA%20MULIA!5e0!3m2!1sid!2sid!4v1597047753041!5m2!1sid!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
 
-        <div class="container">
+        {{-- <div class="container">
             <div class="form">
                 <div id="sendmessage">Your message has been sent. Thank you!</div>
                 <div id="errormessage"></div>
@@ -525,8 +532,9 @@
                 </form>
             </div>
 
-        </div>
-    </section><!-- #contact -->
+        </div> --}}
+    </section>
+    <!-- #contact -->
 
 </main>
 
@@ -536,10 +544,11 @@
 <footer id="footer">
     <div class="container">
         <div class="copyright">
-            &copy; Copyright 2020<strong> Tech2view</strong>
+            &copy; Copyright 2020<strong> All Rights Reserved</strong>
         </div>
     </div>
-</footer><!-- #footer -->
+</footer>
+<!-- #footer -->
 
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 

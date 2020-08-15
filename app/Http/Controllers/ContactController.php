@@ -21,7 +21,7 @@ class ContactController extends Controller
     function contactinsert(Request $request)
     {
         $info = Contact::create($request->except('_token'));
-        return back()->with('status', 'Contact insert successfully!!');
+        return back()->with('status', 'Contact berhasil ditambah!!');
     }
 
     function contactedit($contact_id)
@@ -43,13 +43,13 @@ class ContactController extends Controller
             'linkedin' => $request->linkedin,
 
         ]);
-        return redirect('contact')->withEditstatus('Contact Edited successfully!!');
+        return redirect('contact')->withEditstatus('Contact berhasil dirubah!!');
     }
 
     function contactdelete($contact_id)
     {
         // $contact = Contact::findorFail($contact_id);
         Contact::findOrFail($contact_id)->delete();
-        return back()->with('deletestatus', 'About deleted successfully!!');
+        return back()->with('deletestatus', 'Contact berhasil dihapus!!');
     }
 }

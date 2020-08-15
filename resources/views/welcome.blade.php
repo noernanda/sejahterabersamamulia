@@ -95,11 +95,11 @@
         <a href="#portfolio" class="btn-projects scrollto">Our Projects</a> --}}
       </div>
     </div>
-    <div id="intro-carousel" class="owl-carousel" >
-    @foreach ($sliders as $slider)
-        <div class="item" style="background-image: url({{ asset('uploads/slider_photos') }}/{{ $slider->slider_photo }});"></div>
-    @endforeach
-    </div>
+        <div id="intro-carousel" class="owl-carousel" >
+        @foreach ($sliders as $slider)
+            <div class="item" style="background-image: url({{ asset('uploads/slider_photos') }}/{{ $slider->slider_photo }});"></div>
+        @endforeach
+        </div>
 
 </section>
 <!-- #intro -->
@@ -218,8 +218,20 @@
 
         <div class="container-fluid">
             <div class="row no-gutters">
+                @foreach ($portfolios as $key)
+                    <div class="col-lg-3 col-md-4">
+                        <div class="portfolio-item wow fadeInUp">
+                            <a href="uploads/portfolio_photos/{{$key->portfolio_photo}}" class="portfolio-popup">
+                                <img src="uploads/portfolio_photos/{{$key->portfolio_photo}}" alt="">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info"><h2 class="wow fadeInUp">{{ $key->short_text }}</h2></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                @endforeach
 
-                <div class="col-lg-3 col-md-4">
+                {{-- <div class="col-lg-3 col-md-4">
                     <div class="portfolio-item wow fadeInUp">
                         <a href="img/portfolio/1.jpg" class="portfolio-popup">
                             <img src="img/portfolio/1.jpg" alt="">
@@ -305,7 +317,7 @@
                             </div>
                         </a>
                     </div>
-                </div>
+                </div> --}}
 
             </div>
 
@@ -469,7 +481,9 @@
         <div class="container">
             <div class="section-header">
                 <h2>Contact Us</h2>
-                <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+                {{-- {{ $contacts }} --}}
+                {{-- <p>{{ $contacts->description }}</p> --}}
+                {{-- <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p> --}}
             </div>
 
             <div class="row contact-info">
@@ -478,7 +492,8 @@
                     <div class="contact-address">
                         <i class="ion-ios-location-outline"></i>
                         <h3>Address</h3>
-                        <address>Jl. Marsekal Suryadharma, Komplek Pergudangan Bandara Mas Blok A6 No 18 Kota Tangerang, Jakarta 12260, Indonesia.</address>
+                        <address>{{ $contacts->address }}</address>
+                        {{-- <address>Jl. Marsekal Suryadharma, Komplek Pergudangan Bandara Mas Blok A6 No 18 Kota Tangerang, Jakarta 12260, Indonesia.</address> --}}
                     </div>
                 </div>
 
@@ -486,7 +501,8 @@
                     <div class="contact-phone">
                         <i class="ion-ios-telephone-outline"></i>
                         <h3>Phone Number</h3>
-                        <p><a href="tel:+62215507027">(021) 5507027</a></p>
+                        <p><a href="#">{{ $contacts->phone_no }}</a></p>
+                        {{-- <p><a href="tel:+62215507027">(021) 5507027</a></p> --}}
                     </div>
                 </div>
 
@@ -494,7 +510,8 @@
                     <div class="contact-email">
                         <i class="ion-ios-email-outline"></i>
                         <h3>Email</h3>
-                        <p><a href="mailto:info@example.com">info@example.com</a></p>
+                        <p><a href="#">{{ $contacts->email }}</a></p>
+                        {{-- <p><a href="mailto:info@example.com">info@example.com</a></p> --}}
                     </div>
                 </div>
 
@@ -531,7 +548,6 @@
                     <div class="text-center"><button type="submit">Send Message</button></div>
                 </form>
             </div>
-
         </div> --}}
     </section>
     <!-- #contact -->

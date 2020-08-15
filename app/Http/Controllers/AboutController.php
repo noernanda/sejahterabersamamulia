@@ -32,7 +32,7 @@ class AboutController extends Controller
             $info->about_photo = $new_name;
             $info->save();
         }
-        return back()->with('status', 'About insert successfully!!');
+        return back()->with('status', 'About berhasil ditambah!!');
     }
 
     function aboutedit($about_id)
@@ -59,7 +59,7 @@ class AboutController extends Controller
             'sub_title' => $request->sub_title,
             'description' => $request->description,
         ]);
-        return redirect('about')->withEditstatus('About Edited successfully!!');
+        return redirect('about')->withEditstatus('About berhasil dirubah!!');
     }
 
     function aboutdelete($about_id)
@@ -72,6 +72,6 @@ class AboutController extends Controller
         $about->delete();
 
         // Slider::findOrFail($slider_id)->delete();
-        return back()->with('deletestatus', 'About deleted successfully!!');
+        return back()->with('deletestatus', 'About berhasil dihapus!!');
     }
 }

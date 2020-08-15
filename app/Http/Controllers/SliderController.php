@@ -33,7 +33,7 @@ class SliderController extends Controller
             $info->slider_photo = $new_name;
             $info->save();
         }
-        return back()->with('status', 'Slider insert successfully!!');
+        return back()->with('status', 'Slider berhasil ditambah!!');
     }
 
     function slideredit($slider_id)
@@ -55,7 +55,7 @@ class SliderController extends Controller
                 'slider_photo' => $new_name,
             ]);
         }
-        return redirect('slider')->withEditstatus('Slider Edited successfully!!');
+        return redirect('slider')->withEditstatus('Slider berhasil dirubah!!');
     }
 
     function sliderdelete($slider_id)
@@ -68,6 +68,6 @@ class SliderController extends Controller
         $slider->delete();
 
         // Slider::findOrFail($slider_id)->delete();
-        return back()->with('deletestatus', 'Slider deleted successfully!!');
+        return back()->with('deletestatus', 'Slider berhasil dihapus!!');
     }
 }

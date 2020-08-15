@@ -34,7 +34,7 @@ class ServiceController extends Controller
             $info->services_photo = $new_name;
             $info->save();
         }
-        return back()->with('status', 'Service insert successfully!!');
+        return back()->with('status', 'Service berhasil ditambah!!');
     }
 
     function serviceedit($service_id)
@@ -60,7 +60,7 @@ class ServiceController extends Controller
             'title' => $request->title,
             'short_description' => $request->short_description,
         ]);
-        return redirect('service')->withEditstatus('Service Edited successfully!!');
+        return redirect('service')->withEditstatus('Service berhasil dirubah!!');
     }
 
     function servicedelete($service_id)
@@ -73,6 +73,6 @@ class ServiceController extends Controller
         $service->delete();
 
         // Slider::findOrFail($slider_id)->delete();
-        return back()->with('deletestatus', 'Service deleted successfully!!');
+        return back()->with('deletestatus', 'Service berhasil dihapus!!');
     }
 }
